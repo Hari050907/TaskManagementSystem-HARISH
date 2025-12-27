@@ -3,7 +3,7 @@ package com.example.taskmanagementsystem.controller;
 import com.example.taskmanagementsystem.exception.BadRequestException;
 import com.example.taskmanagementsystem.exception.ResourceNotFoundException;
 import com.example.taskmanagementsystem.model.User;
-import com.example.taskmanagementsystem.service.UserServiceImpl;
+import com.example.taskmanagementsystem.service.impl.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;

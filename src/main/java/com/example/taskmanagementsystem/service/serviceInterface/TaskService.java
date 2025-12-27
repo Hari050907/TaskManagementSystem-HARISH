@@ -1,4 +1,4 @@
-package com.example.taskmanagementsystem.service;
+package com.example.taskmanagementsystem.service.serviceInterface;
 
 import com.example.taskmanagementsystem.model.Task;
 

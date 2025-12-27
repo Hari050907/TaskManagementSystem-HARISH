@@ -1,4 +1,4 @@
-package com.example.taskmanagementsystem.service;
+package com.example.taskmanagementsystem.service.impl;
 
 import com.example.taskmanagementsystem.model.TaskAssignment;
 import com.example.taskmanagementsystem.repository.TaskAssignmentRepository;

@@ -3,7 +3,7 @@ package com.example.taskmanagementsystem.controller;
 import com.example.taskmanagementsystem.exception.BadRequestException;
 import com.example.taskmanagementsystem.exception.ResourceNotFoundException;
 import com.example.taskmanagementsystem.model.Comment;
-import com.example.taskmanagementsystem.service.CommentServiceImpl;
+import com.example.taskmanagementsystem.service.impl.CommentServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -17,8 +17,8 @@ public class CommentController {
     private CommentServiceImpl commentService;
 
     @GetMapping("/{id}")
-    public ResponseEntity<String> getComment(@PathVariable Long id) {
-        String comment = commentService.getCommentById(id);
+    public ResponseEntity<?> getComment(@PathVariable Long id) {
+        Comment comment = commentService.getCommentById(id);
         if (comment == null) {
             throw new ResourceNotFoundException("Comment not found with id " + id);
         }
@@ -26,7 +26,7 @@ public class CommentController {
     }
 
     @PostMapping
-    public ResponseEntity<Comment> addComment(@RequestBody Comment comment) {
+    public ResponseEntity<?> addComment(@RequestBody Comment comment) {
         Comment saved = commentService.addComment(comment);
         if (saved == null) {
             throw new BadRequestException("Unable to add comment");

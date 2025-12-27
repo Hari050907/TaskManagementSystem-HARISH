@@ -2,7 +2,7 @@ package com.example.taskmanagementsystem.controller;
 
 import com.example.taskmanagementsystem.exception.ResourceNotFoundException;
 import com.example.taskmanagementsystem.model.TaskStatusLog;
-import com.example.taskmanagementsystem.service.TaskStatusLogServiceImpl;
+import com.example.taskmanagementsystem.service.impl.TaskStatusLogServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

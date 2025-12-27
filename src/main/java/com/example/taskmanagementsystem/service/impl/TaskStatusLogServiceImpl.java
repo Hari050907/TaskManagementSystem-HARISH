@@ -1,7 +1,8 @@
-package com.example.taskmanagementsystem.service;
+package com.example.taskmanagementsystem.service.impl;
 
 import com.example.taskmanagementsystem.model.TaskStatusLog;
 import com.example.taskmanagementsystem.repository.TaskStatusLogRepository;
+import com.example.taskmanagementsystem.service.serviceInterface.TaskStatusLogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

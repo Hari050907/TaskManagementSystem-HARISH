@@ -1,7 +1,6 @@
-package com.example.taskmanagementsystem.service;
+package com.example.taskmanagementsystem.service.serviceInterface;
 
 import com.example.taskmanagementsystem.model.TaskStatusLog;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 
