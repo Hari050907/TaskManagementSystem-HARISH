@@ -9,4 +9,7 @@ public interface TaskService {
     Task addTask(Task task);
     Task getTaskById(Long id);
     Task updateTask(Long id,Task updatedTask);
+    Task updateTaskStatus(Long id,String status);
+    List<Task> getTasksByStatus(String status);
+    List<Task> getTaskByUser(Long id);
 }
